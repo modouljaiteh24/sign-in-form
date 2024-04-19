@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  position: relative;
+  padding: 3rem;
+}
+.backdrop {
+  background-color: #4f59e5;
+  height: 100%;
+  width: 450px;
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  border-radius: 1rem;
+}
+
+.login-form-container {
+  background-color: white;
+  /* background-color: aquamarine; */
+  border-radius: 1rem;
+  box-shadow: 0px 1px 3px 0 #b3b3b3;
+  padding: 2rem 2.5rem;
+  position: relative;
+  width: 450px;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+.form-group {
+  margin-top: 1.75rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.form-group input {
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1rem 0.5rem;
+  width: 100%;
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+
+.submit-button-container button {
+  padding: 1.1rem 2.5rem;
+  border: none;
+  border-radius: 20rem;
+  background-color: #4f59e5;
+  color: white;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.sign-up-link-container {
+  font-weight: 600;
+  margin-top: 2.25rem;
+  text-align: center;
+}
+
+@media (max-width: 475px) {
+  .backdrop {
+    display: none;
+  }
+}
